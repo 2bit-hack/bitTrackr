@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&display=swap");
+
+:root {
+  --bg: #0a0908;
+  --acc1: #00adcc;
+  --acc2: #008ba3;
+}
+
+body {
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Bitter";
+  background-color: var(--bg);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.result {
+  display: none;
+}
+
+.error {
+  display: none;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.footer {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.desc {
+  max-width: 40vw;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.input-box {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.input-field {
+  padding: 0.5rem;
+  min-width: 15vw;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: 0px;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 174, 87, 1) 0%,
+    rgba(12, 116, 117, 1) 90%
+  );
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(14, 120, 87, 1) 0%,
+    rgba(12, 80, 117, 1) 90%
+  );
+}
+
+.result {
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.error {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #f00;
+}
+
+.link {
+  margin-left: 0.125rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .desc {
+    max-width: 75vw;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .input-field {
+    padding: 0.5rem;
+    min-width: 50vw;
+  }
+}

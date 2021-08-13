@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BitTrackr</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body class="col align-center justify-between">
+    <div class="col align-center">
+      <h1 class="heading">BitTrackr.</h1>
+      <p class="desc">
+        Find out how much money you would've made / lost if you would have
+        invested in Bitcoin at a certain date in the past
+      </p>
+      <div class="col input-box">
+        <label for="date-input" class="input-label">Date of investment</label>
+        <input id="date-input" type="date" class="input-field" />
+      </div>
+      <div class="col input-box">
+        <label for="qty-input" class="input-label"
+          >Quantity bought (in BTC)</label
+        >
+        <input id="qty-input" min="0" type="number" class="input-field" />
+      </div>
+      <button id="btn" class="btn">CHECK</button>
+      <p id="error" class="error"></p>
+      <p id="result" class="result"></p>
+    </div>
+    <footer>
+      <p class="footer">
+        Powered by
+        <a
+          class="link"
+          href="https://www.coindesk.com/price/bitcoin"
+          target="_blank"
+          >Coindesk</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
